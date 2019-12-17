@@ -6,21 +6,6 @@ INPUT = tuple(map(int, INPUT.strip()))
 
 
 def run(n=100):
-    # input = main_input * 10000
-    # offset = int(input[:7])
-    # input = [int(x) for x in input]
-    # input_length = int(len(input))
-    #
-    # last_output = input.copy()
-    # for i in range(100):
-    #     new_output = last_output.copy()
-    #     for j in reversed(range(offset, input_length)):
-    #         new_val = (last_output[j - 1] + new_output[j]) % 10
-    #         new_output[j - 1] = new_val
-    #     last_output = new_output.copy()
-    #
-    # result_str = ''.join(map(str, last_output[offset:offset + 8]))
-
     offset = int("".join(map(str, INPUT[:7])))
     print("offset", offset)
     full_input_len = len(INPUT) * 10000
